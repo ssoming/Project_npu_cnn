@@ -1,0 +1,3 @@
+/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/vitis_ws_new/wafer_npu_platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/vitis_ws_new/wafer_npu_platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/vitis_ws_new/wafer_npu_platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jul  1 12:15:37 2026
+# Process ID         : 96211
+# Current directory  : /home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado
+# Command line       : vivado -mode batch -source package_ip.tcl -log package_ip.log -journal package_ip.jou
+# Log file           : /home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/package_ip.log
+# Journal file       : /home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/package_ip.jou
+# Running On         : kimyujeong-IdeaPad-1-15ALC7
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : AMD Ryzen 5 5500U with Radeon Graphics
+# CPU Frequency      : 1449.280 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 14489 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 18784 MB
+# Available Virtual  : 7332 MB
+#-----------------------------------------------------------
+source package_ip.tcl
+# set proj_dir   "/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado"
+# set proj_name  "C_vivado"
+# set ip_repo_dir "$proj_dir/ip_repo_cnn_npu"
+# set bd_name    "wafer_npu_bd"
+# set xsa_out    "$proj_dir/wafer_npu.xsa"
+# set num_jobs   8
+# puts "INFO: ===== STEP 0: open project ====="
+INFO: ===== STEP 0: open project =====
+# open_project "$proj_dir/$proj_name.xpr"
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/myip_1_0'.
+Scanning sources...
+Finished scanning sources
+# puts "INFO: ===== STEP 1: package cnn_npu IP ====="
+INFO: ===== STEP 1: package cnn_npu IP =====
+# file mkdir $ip_repo_dir
+# set_property top axi_lite_cnn_wrapper [current_fileset]
+# update_compile_order -fileset sources_1
+# ipx::package_project -root_dir /home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/ip_repo_cnn_npu -vendor user.org -library user -taxonomy /UserIP -import_files -set_current true
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/ip_repo/myip_cnn_c_1_0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/myip_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/ip_repo/myip_wafer_c_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axi_aresetn'.
+WARNING: [IP_Flow 19-11888] Component Definition 'user.org:user:axi_lite_cnn_wrapper:1.0 (axi_lite_cnn_wrapper_v1_0)': IP description "axi_lite_cnn_wrapper_v1_0" is not meaningful: same as name or display name
+WARNING: [IP_Flow 19-11770] Clock interface 's_axi_aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+# set_property name        cnn_npu           [ipx::current_core]
+# set_property display_name "CNN NPU (WM-811K wafer defect classifier)" [ipx::current_core]
+# set_property description "AXI4-Lite wrapped CNN NPU (conv/pool/gap/fc pipeline) for wafer defect classification" [ipx::current_core]
+# set_property version     1.0               [ipx::current_core]
+# set_property vendor      user.org          [ipx::current_core]
+# set_property library     user              [ipx::current_core]
+# ipx::infer_bus_interface s_axi_aclk    xilinx.com:signal:clock_rtl:1.0 [ipx::current_core]
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from TCL Argument).
+# ipx::infer_bus_interface s_axi_aresetn xilinx.com:signal:reset_rtl:1.0 [ipx::current_core]
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from TCL Argument).
+# ipx::infer_bus_interface [list \
+#     s_axi_awaddr s_axi_awprot s_axi_awvalid s_axi_awready \
+#     s_axi_wdata  s_axi_wstrb  s_axi_wvalid  s_axi_wready \
+#     s_axi_bresp  s_axi_bvalid s_axi_bready \
+#     s_axi_araddr s_axi_arprot s_axi_arvalid s_axi_arready \
+#     s_axi_rdata  s_axi_rresp  s_axi_rvalid  s_axi_rready \
+# ] xilinx.com:interface:axi4lite_rtl:1.0 [ipx::current_core]
+WARNING: [IP_Flow 19-1654] Cannot find bus abstraction "xilinx.com:interface:axi4lite_rtl:1.0" from the IP catalog.
+
+    while executing
+"ipx::infer_bus_interface [list \
+    s_axi_awaddr s_axi_awprot s_axi_awvalid s_axi_awready \
+    s_axi_wdata  s_axi_wstrb  s_axi_wvalid  s_axi_wready ..."
+    (file "package_ip.tcl" line 57)
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 12:15:41 2026...

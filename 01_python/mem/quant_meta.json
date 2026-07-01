@@ -1,0 +1,80 @@
+{
+  "source_model": "/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/models/wafer_cnn_gap_0.891.h5",
+  "activation_format": {
+    "bits": 8,
+    "frac_bits": 2,
+    "note": "활성화는 전 레이어 공통 Q1.7 고정. 가중치는 레이어별로 다른 frac_bits를 쓸 수 있음 (아래 layers[].weight_frac_bits 참고) - conv/fc 출력은 acc(bias 포함) 후 그 레이어의 weight_frac_bits만큼 right-shift 하면 다시 Q1.7로 돌아온다."
+  },
+  "layers": [
+    {
+      "name": "conv1",
+      "layer_type": "conv2d",
+      "kh": 3,
+      "kw": 3,
+      "in_ch": 1,
+      "out_ch": 8,
+      "weight_count": 72,
+      "bias_count": 8,
+      "weight_max_abs_float": 1.4882922172546387,
+      "weight_bits": 8,
+      "weight_frac_bits": 6,
+      "bias_bits": 16,
+      "bias_frac_bits": 8,
+      "weight_order": "out_ch, in_ch, kh, kw (row-major)",
+      "weight_file": "conv1_weight.mem",
+      "bias_file": "conv1_bias.mem"
+    },
+    {
+      "name": "conv2",
+      "layer_type": "conv2d",
+      "kh": 3,
+      "kw": 3,
+      "in_ch": 8,
+      "out_ch": 16,
+      "weight_count": 1152,
+      "bias_count": 16,
+      "weight_max_abs_float": 0.7160174250602722,
+      "weight_bits": 8,
+      "weight_frac_bits": 7,
+      "bias_bits": 16,
+      "bias_frac_bits": 9,
+      "weight_order": "out_ch, in_ch, kh, kw (row-major)",
+      "weight_file": "conv2_weight.mem",
+      "bias_file": "conv2_bias.mem"
+    },
+    {
+      "name": "conv3",
+      "layer_type": "conv2d",
+      "kh": 3,
+      "kw": 3,
+      "in_ch": 16,
+      "out_ch": 64,
+      "weight_count": 9216,
+      "bias_count": 64,
+      "weight_max_abs_float": 0.5815737247467041,
+      "weight_bits": 8,
+      "weight_frac_bits": 7,
+      "bias_bits": 16,
+      "bias_frac_bits": 9,
+      "weight_order": "out_ch, in_ch, kh, kw (row-major)",
+      "weight_file": "conv3_weight.mem",
+      "bias_file": "conv3_bias.mem"
+    },
+    {
+      "name": "fc",
+      "layer_type": "dense",
+      "in_features": 64,
+      "out_features": 9,
+      "weight_count": 576,
+      "bias_count": 9,
+      "weight_max_abs_float": 9.142969131469727,
+      "weight_bits": 8,
+      "weight_frac_bits": 3,
+      "bias_bits": 16,
+      "bias_frac_bits": 5,
+      "weight_order": "out_features, in_features",
+      "weight_file": "fc_weight.mem",
+      "bias_file": "fc_bias.mem"
+    }
+  ]
+}

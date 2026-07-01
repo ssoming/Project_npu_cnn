@@ -1,0 +1,52 @@
+/ {
+	amba_pl: amba_pl {
+		ranges;
+		compatible = "simple-bus";
+		#address-cells = <1>;
+		#size-cells = <1>;
+		firmware-name = "wafer_npu.bit.bin";
+		clocking0: clocking0 {
+			compatible = "xlnx,fclk";
+			assigned-clocks = <&clkc 15>;
+			assigned-clock-rates = <40000000>;
+			#clock-cells = <0>;
+			clock-output-names = "fabric_clk";
+			clocks = <&clkc 15>;
+		};
+		cnn_npu_0: cnn_npu@43c00000 {
+			xlnx,img0-h = <48>;
+			xlnx,fc-bias-file = "/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/fc_bias.mem";
+			xlnx,conv2-weight-file = "/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/conv2_weight.mem";
+			compatible = "xlnx,cnn-npu-1.0";
+			xlnx,num-classes = <9>;
+			xlnx,conv3-weight-file = "/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/conv3_weight.mem";
+			xlnx,acc-w = <32>;
+			xlnx,c0 = <1>;
+			xlnx,c1 = <8>;
+			xlnx,c2 = <16>;
+			xlnx,rable = <0>;
+			xlnx,c3 = <64>;
+			xlnx,ip-name = "cnn_npu";
+			xlnx,addr-w = <16>;
+			xlnx,score-w = <24>;
+			xlnx,conv1-bias-file = "/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/conv1_bias.mem";
+			reg = <0x43c00000 0x1000>;
+			clocks = <&clkc 15>;
+			xlnx,fc-frac-bits = <3>;
+			xlnx,conv2-bias-file = "/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/conv2_bias.mem";
+			xlnx,conv3-bias-file = "/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/conv3_bias.mem";
+			xlnx,fc-weight-file = "/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/fc_weight.mem";
+			xlnx,bias-w = <16>;
+			xlnx,edk-iptype = "PERIPHERAL";
+			xlnx,data-w = <8>;
+			status = "okay";
+			clock-names = "s_axi_aclk";
+			xlnx,conv1-frac-bits = <6>;
+			xlnx,conv2-frac-bits = <7>;
+			xlnx,img0-w = <48>;
+			xlnx,conv3-frac-bits = <7>;
+			xlnx,conv1-weight-file = "/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/conv1_weight.mem";
+			xlnx,name = "cnn_npu_0";
+		};
+	};
+};

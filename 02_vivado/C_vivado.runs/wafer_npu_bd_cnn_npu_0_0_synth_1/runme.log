@@ -1,0 +1,750 @@
+
+*** Running vivado
+    with args -log wafer_npu_bd_cnn_npu_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source wafer_npu_bd_cnn_npu_0_0.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Jul  1 12:28:07 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source wafer_npu_bd_cnn_npu_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/ip_repo_cnn_npu'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: wafer_npu_bd_cnn_npu_0_0
+Command: synth_design -top wafer_npu_bd_cnn_npu_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 146192
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1888.121 ; gain = 418.828 ; free physical = 288 ; free virtual = 2622
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wafer_npu_bd_cnn_npu_0_0' [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ip/wafer_npu_bd_cnn_npu_0_0/synth/wafer_npu_bd_cnn_npu_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_lite_cnn_wrapper' [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/axi_lite_cnn_wrapper.v:71]
+INFO: [Synth 8-6157] synthesizing module 'cnn_core_fsm' [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/cnn_core_fsm.v:41]
+INFO: [Synth 8-3876] $readmem data file '/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/conv1_weight.mem' is read successfully [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/cnn_core_fsm.v:161]
+INFO: [Synth 8-3876] $readmem data file '/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/conv1_bias.mem' is read successfully [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/cnn_core_fsm.v:162]
+INFO: [Synth 8-3876] $readmem data file '/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/conv2_weight.mem' is read successfully [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/cnn_core_fsm.v:163]
+INFO: [Synth 8-3876] $readmem data file '/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/conv2_bias.mem' is read successfully [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/cnn_core_fsm.v:164]
+INFO: [Synth 8-3876] $readmem data file '/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/conv3_weight.mem' is read successfully [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/cnn_core_fsm.v:165]
+INFO: [Synth 8-3876] $readmem data file '/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/conv3_bias.mem' is read successfully [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/cnn_core_fsm.v:166]
+INFO: [Synth 8-3876] $readmem data file '/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/fc_weight.mem' is read successfully [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/cnn_core_fsm.v:167]
+INFO: [Synth 8-3876] $readmem data file '/home/kimyujeong/PycharmProjects/wafer_NPU/python/python/mem/fc_bias.mem' is read successfully [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/cnn_core_fsm.v:168]
+INFO: [Synth 8-6157] synthesizing module 'conv_layer' [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'conv_layer' (0#1) [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:44]
+INFO: [Synth 8-6157] synthesizing module 'maxpool' [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/maxpool.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool' (0#1) [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/maxpool.v:21]
+INFO: [Synth 8-6157] synthesizing module 'conv_layer__parameterized0' [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'conv_layer__parameterized0' (0#1) [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:44]
+INFO: [Synth 8-6157] synthesizing module 'maxpool__parameterized0' [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/maxpool.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool__parameterized0' (0#1) [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/maxpool.v:21]
+INFO: [Synth 8-6157] synthesizing module 'conv_layer__parameterized1' [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'conv_layer__parameterized1' (0#1) [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:44]
+INFO: [Synth 8-6157] synthesizing module 'maxpool__parameterized1' [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/maxpool.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool__parameterized1' (0#1) [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/maxpool.v:21]
+INFO: [Synth 8-6157] synthesizing module 'global_avg_pool' [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/global_avg_pool.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'global_avg_pool' (0#1) [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/global_avg_pool.v:50]
+INFO: [Synth 8-6157] synthesizing module 'fc' [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/fc.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'fc' (0#1) [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/fc.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_core_fsm' (0#1) [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/cnn_core_fsm.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'axi_lite_cnn_wrapper' (0#1) [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/axi_lite_cnn_wrapper.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'wafer_npu_bd_cnn_npu_0_0' (0#1) [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ip/wafer_npu_bd_cnn_npu_0_0/synth/wafer_npu_bd_cnn_npu_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element next_iy_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:187]
+WARNING: [Synth 8-6014] Unused sequential element next_ix_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:188]
+WARNING: [Synth 8-6014] Unused sequential element next_kx_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:219]
+WARNING: [Synth 8-6014] Unused sequential element next_ky_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:221]
+WARNING: [Synth 8-6014] Unused sequential element next_ic_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:222]
+WARNING: [Synth 8-6014] Unused sequential element relu_val_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:255]
+WARNING: [Synth 8-6014] Unused sequential element shifted_val_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:256]
+WARNING: [Synth 8-6014] Unused sequential element sat_val_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:257]
+WARNING: [Synth 8-6014] Unused sequential element next_tap_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/maxpool.v:133]
+WARNING: [Synth 8-6014] Unused sequential element next_iy_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:187]
+WARNING: [Synth 8-6014] Unused sequential element next_ix_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:188]
+WARNING: [Synth 8-6014] Unused sequential element next_kx_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:219]
+WARNING: [Synth 8-6014] Unused sequential element next_ky_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:221]
+WARNING: [Synth 8-6014] Unused sequential element next_ic_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:222]
+WARNING: [Synth 8-6014] Unused sequential element relu_val_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:255]
+WARNING: [Synth 8-6014] Unused sequential element shifted_val_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:256]
+WARNING: [Synth 8-6014] Unused sequential element sat_val_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:257]
+WARNING: [Synth 8-6014] Unused sequential element next_tap_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/maxpool.v:133]
+WARNING: [Synth 8-6014] Unused sequential element next_iy_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:187]
+WARNING: [Synth 8-6014] Unused sequential element next_ix_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:188]
+WARNING: [Synth 8-6014] Unused sequential element next_kx_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:219]
+WARNING: [Synth 8-6014] Unused sequential element next_ky_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:221]
+WARNING: [Synth 8-6014] Unused sequential element next_ic_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:222]
+WARNING: [Synth 8-6014] Unused sequential element relu_val_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:255]
+WARNING: [Synth 8-6014] Unused sequential element shifted_val_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:256]
+WARNING: [Synth 8-6014] Unused sequential element sat_val_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/conv_layer.v:257]
+WARNING: [Synth 8-6014] Unused sequential element next_tap_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/maxpool.v:133]
+WARNING: [Synth 8-6014] Unused sequential element next_px_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/global_avg_pool.v:151]
+WARNING: [Synth 8-6014] Unused sequential element next_py_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/global_avg_pool.v:152]
+WARNING: [Synth 8-6014] Unused sequential element avg_val_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/global_avg_pool.v:168]
+WARNING: [Synth 8-6014] Unused sequential element abs_acc_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/global_avg_pool.v:170]
+WARNING: [Synth 8-6014] Unused sequential element bias_reg_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/fc.v:170]
+WARNING: [Synth 8-6014] Unused sequential element next_inf_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/fc.v:219]
+WARNING: [Synth 8-6014] Unused sequential element shifted_val_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/fc.v:231]
+WARNING: [Synth 8-6014] Unused sequential element amx_new_best_idx_reg was removed.  [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ipshared/7937/src/cnn_core_fsm.v:508]
+WARNING: [Synth 8-7129] Port img_addr[15] in module cnn_core_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port img_addr[14] in module cnn_core_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port img_addr[13] in module cnn_core_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port img_addr[12] in module cnn_core_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[31] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[30] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[29] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[28] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[27] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[26] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[25] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[24] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[23] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[22] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[21] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[20] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[19] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[18] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[17] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[16] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[15] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[14] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[13] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[12] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module axi_lite_cnn_wrapper is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1992.090 ; gain = 522.797 ; free physical = 230 ; free virtual = 2397
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2009.902 ; gain = 540.609 ; free physical = 194 ; free virtual = 2361
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2009.902 ; gain = 540.609 ; free physical = 194 ; free virtual = 2361
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2009.902 ; gain = 0.000 ; free physical = 170 ; free virtual = 2320
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ip/wafer_npu_bd_cnn_npu_0_0/src/Zybo-Z7-Master.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.gen/sources_1/bd/wafer_npu_bd/ip/wafer_npu_bd_cnn_npu_0_0/src/Zybo-Z7-Master.xdc] for cell 'inst'
+Parsing XDC File [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.runs/wafer_npu_bd_cnn_npu_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.runs/wafer_npu_bd_cnn_npu_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2159.652 ; gain = 0.000 ; free physical = 209 ; free virtual = 2223
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2159.652 ; gain = 0.000 ; free physical = 209 ; free virtual = 2223
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2159.652 ; gain = 690.359 ; free physical = 170 ; free virtual = 2134
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2167.656 ; gain = 698.363 ; free physical = 170 ; free virtual = 2134
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.runs/wafer_npu_bd_cnn_npu_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2167.656 ; gain = 698.363 ; free physical = 170 ; free virtual = 2134
+---------------------------------------------------------------------------------
+DSP Debug: swapped A/B pins for adder 0x440bdb00
+DSP Debug: swapped A/B pins for adder 0x5a54f200
+DSP Debug: swapped A/B pins for adder 0x6112a900
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'global_avg_pool'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                            00001 |                              000
+                 S_FETCH |                            00010 |                              001
+                   S_CAP |                            00100 |                              010
+                 S_WRITE |                            01000 |                              011
+                  S_DONE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'global_avg_pool'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+             S_BIAS_ADDR |                              001 |                              001
+              S_BIAS_CAP |                              010 |                              010
+                 S_FETCH |                              011 |                              011
+               S_COMPUTE |                              100 |                              100
+                 S_WRITE |                              101 |                              101
+                  S_DONE |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fc'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2167.656 ; gain = 698.363 ; free physical = 170 ; free virtual = 2143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 53    
+	   3 Input   32 Bit       Adders := 6     
+	   2 Input   16 Bit       Adders := 5     
+	   2 Input    8 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 43    
+	               24 Bit    Registers := 3     
+	               16 Bit    Registers := 31    
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 23    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 47    
++---RAMs : 
+	             144K Bit	(18432 X 8 bit)          RAMs := 1     
+	              72K Bit	(9216 X 8 bit)          RAMs := 2     
+	              36K Bit	(4608 X 8 bit)          RAMs := 1     
+	              18K Bit	(2304 X 8 bit)          RAMs := 3     
+	              512 Bit	(64 X 8 bit)          RAMs := 1     
+	              216 Bit	(9 X 24 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 5     
++---Muxes : 
+	   8 Input   32 Bit        Muxes := 21    
+	   2 Input   32 Bit        Muxes := 25    
+	   6 Input   32 Bit        Muxes := 12    
+	   5 Input   32 Bit        Muxes := 4     
+	   7 Input   32 Bit        Muxes := 4     
+	  21 Input   32 Bit        Muxes := 1     
+	   8 Input   16 Bit        Muxes := 9     
+	   2 Input   16 Bit        Muxes := 12    
+	   6 Input   16 Bit        Muxes := 3     
+	   5 Input   16 Bit        Muxes := 1     
+	   7 Input   16 Bit        Muxes := 3     
+	   9 Input   16 Bit        Muxes := 1     
+	  17 Input   16 Bit        Muxes := 1     
+	  10 Input   16 Bit        Muxes := 1     
+	  21 Input   16 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   5 Input   12 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 6     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 5     
+	   3 Input    3 Bit        Muxes := 6     
+	   6 Input    3 Bit        Muxes := 3     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   8 Input    1 Bit        Muxes := 48    
+	   2 Input    1 Bit        Muxes := 23    
+	   6 Input    1 Bit        Muxes := 36    
+	   5 Input    1 Bit        Muxes := 11    
+	   7 Input    1 Bit        Muxes := 11    
+	  21 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP ifmap_index0_return, operation Mode is: C+A*(B:0x30).
+DSP Report: operator ifmap_index0_return is absorbed into DSP ifmap_index0_return.
+DSP Report: operator ifmap_index0_return0 is absorbed into DSP ifmap_index0_return.
+DSP Report: Generating DSP ifmap_index2_return1, operation Mode is: C+A*(B:0x30).
+DSP Report: operator ifmap_index2_return1 is absorbed into DSP ifmap_index2_return1.
+DSP Report: operator ifmap_index1_return0 is absorbed into DSP ifmap_index2_return1.
+DSP Report: Generating DSP ifmap_index2_return, operation Mode is: C+A*(B:0x30).
+DSP Report: operator ifmap_index2_return is absorbed into DSP ifmap_index2_return.
+DSP Report: operator ifmap_index2_return0 is absorbed into DSP ifmap_index2_return.
+DSP Report: Generating DSP ifmap_index1_return0, operation Mode is: A*(B:0x30).
+DSP Report: operator ifmap_index1_return0 is absorbed into DSP ifmap_index1_return0.
+DSP Report: Generating DSP ifmap_index1_return, operation Mode is: A*(B:0x30).
+DSP Report: operator ifmap_index1_return is absorbed into DSP ifmap_index1_return.
+DSP Report: Generating DSP ifmap_index0_return, operation Mode is: C+A*(B:0x30).
+DSP Report: operator ifmap_index0_return is absorbed into DSP ifmap_index0_return.
+DSP Report: operator ifmap_index0_return0 is absorbed into DSP ifmap_index0_return.
+DSP Report: Generating DSP ofmap_index_return1, operation Mode is: C+A*(B:0x30).
+DSP Report: operator ofmap_index_return1 is absorbed into DSP ofmap_index_return1.
+DSP Report: operator ofmap_index_return2 is absorbed into DSP ofmap_index_return1.
+DSP Report: Generating DSP ofmap_index_return, operation Mode is: C+A*(B:0x30).
+DSP Report: operator ofmap_index_return is absorbed into DSP ofmap_index_return.
+DSP Report: operator ofmap_index_return0 is absorbed into DSP ofmap_index_return.
+DSP Debug: swapped A/B pins for adder 0x638566c0
+DSP Report: Generating DSP ifmap_index6_return0, operation Mode is: (D+(A:0x1))*(B:0x30).
+DSP Report: operator ifmap_index6_return0 is absorbed into DSP ifmap_index6_return0.
+DSP Report: operator ic_f is absorbed into DSP ifmap_index6_return0.
+DSP Report: Generating DSP ifmap_index6_return, operation Mode is: A*(B:0x30).
+DSP Report: operator ifmap_index6_return is absorbed into DSP ifmap_index6_return.
+DSP Report: Generating DSP ifmap_index5_return0, operation Mode is: C+A*(B:0x30).
+DSP Report: operator ifmap_index5_return0 is absorbed into DSP ifmap_index5_return0.
+DSP Report: operator ifmap_index4_return2 is absorbed into DSP ifmap_index5_return0.
+DSP Report: Generating DSP ifmap_index5_return, operation Mode is: A*(B:0x30).
+DSP Report: operator ifmap_index5_return is absorbed into DSP ifmap_index5_return.
+DSP Report: Generating DSP ifmap_index4_return1, operation Mode is: C+A*(B:0x30).
+DSP Report: operator ifmap_index4_return1 is absorbed into DSP ifmap_index4_return1.
+DSP Report: operator ifmap_index4_return2 is absorbed into DSP ifmap_index4_return1.
+DSP Report: Generating DSP ifmap_index4_return, operation Mode is: C+A*(B:0x30).
+DSP Report: operator ifmap_index4_return is absorbed into DSP ifmap_index4_return.
+DSP Report: operator ifmap_index4_return0 is absorbed into DSP ifmap_index4_return.
+DSP Report: Generating DSP ifmap_index4_return, operation Mode is: C+(D+A)*(B:0x30).
+DSP Report: operator ifmap_index4_return is absorbed into DSP ifmap_index4_return.
+DSP Report: operator ifmap_index4_return0 is absorbed into DSP ifmap_index4_return.
+DSP Report: operator ifmap_index4_return1 is absorbed into DSP ifmap_index4_return.
+DSP Report: Generating DSP ofmap_index0_return1, operation Mode is: C+A*(B:0x18).
+DSP Report: operator ofmap_index0_return1 is absorbed into DSP ofmap_index0_return1.
+DSP Report: operator ofmap_index0_return2 is absorbed into DSP ofmap_index0_return1.
+DSP Report: Generating DSP ofmap_index0_return, operation Mode is: C+A*(B:0x18).
+DSP Report: operator ofmap_index0_return is absorbed into DSP ofmap_index0_return.
+DSP Report: operator ofmap_index0_return0 is absorbed into DSP ofmap_index0_return.
+DSP Report: Generating DSP ifmap_index8_return, operation Mode is: C+A*(B:0x18).
+DSP Report: operator ifmap_index8_return is absorbed into DSP ifmap_index8_return.
+DSP Report: operator ifmap_index8_return0 is absorbed into DSP ifmap_index8_return.
+DSP Report: Generating DSP ifmap_index10_return1, operation Mode is: C+A*(B:0x18).
+DSP Report: operator ifmap_index10_return1 is absorbed into DSP ifmap_index10_return1.
+DSP Report: operator ifmap_index9_return0 is absorbed into DSP ifmap_index10_return1.
+DSP Report: Generating DSP ifmap_index10_return, operation Mode is: C+A*(B:0x18).
+DSP Report: operator ifmap_index10_return is absorbed into DSP ifmap_index10_return.
+DSP Report: operator ifmap_index10_return0 is absorbed into DSP ifmap_index10_return.
+DSP Report: Generating DSP ifmap_index9_return0, operation Mode is: A*(B:0x18).
+DSP Report: operator ifmap_index9_return0 is absorbed into DSP ifmap_index9_return0.
+DSP Report: Generating DSP ifmap_index9_return, operation Mode is: A*(B:0x18).
+DSP Report: operator ifmap_index9_return is absorbed into DSP ifmap_index9_return.
+DSP Report: Generating DSP ifmap_index8_return, operation Mode is: C+A*(B:0x18).
+DSP Report: operator ifmap_index8_return is absorbed into DSP ifmap_index8_return.
+DSP Report: operator ifmap_index8_return0 is absorbed into DSP ifmap_index8_return.
+DSP Report: Generating DSP ofmap_index1_return1, operation Mode is: C+A*(B:0x18).
+DSP Report: operator ofmap_index1_return1 is absorbed into DSP ofmap_index1_return1.
+DSP Report: operator ofmap_index1_return2 is absorbed into DSP ofmap_index1_return1.
+DSP Report: Generating DSP ofmap_index1_return, operation Mode is: C+A*(B:0x18).
+DSP Report: operator ofmap_index1_return is absorbed into DSP ofmap_index1_return.
+DSP Report: operator ofmap_index1_return0 is absorbed into DSP ofmap_index1_return.
+DSP Debug: swapped A/B pins for adder 0x5ef8f9e0
+DSP Report: Generating DSP ifmap_index14_return0, operation Mode is: (D+(A:0x1))*(B:0x18).
+DSP Report: operator ifmap_index14_return0 is absorbed into DSP ifmap_index14_return0.
+DSP Report: operator ic_f is absorbed into DSP ifmap_index14_return0.
+DSP Report: Generating DSP ifmap_index14_return, operation Mode is: A*(B:0x18).
+DSP Report: operator ifmap_index14_return is absorbed into DSP ifmap_index14_return.
+DSP Report: Generating DSP ifmap_index13_return0, operation Mode is: C+A*(B:0x18).
+DSP Report: operator ifmap_index13_return0 is absorbed into DSP ifmap_index13_return0.
+DSP Report: operator ifmap_index12_return2 is absorbed into DSP ifmap_index13_return0.
+DSP Report: Generating DSP ifmap_index13_return, operation Mode is: A*(B:0x18).
+DSP Report: operator ifmap_index13_return is absorbed into DSP ifmap_index13_return.
+DSP Report: Generating DSP ifmap_index12_return1, operation Mode is: C+A*(B:0x18).
+DSP Report: operator ifmap_index12_return1 is absorbed into DSP ifmap_index12_return1.
+DSP Report: operator ifmap_index12_return2 is absorbed into DSP ifmap_index12_return1.
+DSP Report: Generating DSP ifmap_index12_return, operation Mode is: C+A*(B:0x18).
+DSP Report: operator ifmap_index12_return is absorbed into DSP ifmap_index12_return.
+DSP Report: operator ifmap_index12_return0 is absorbed into DSP ifmap_index12_return.
+DSP Report: Generating DSP ifmap_index12_return, operation Mode is: C+(D+A)*(B:0x18).
+DSP Report: operator ifmap_index12_return is absorbed into DSP ifmap_index12_return.
+DSP Report: operator ifmap_index12_return0 is absorbed into DSP ifmap_index12_return.
+DSP Report: operator ifmap_index12_return1 is absorbed into DSP ifmap_index12_return.
+DSP Debug: swapped A/B pins for adder 0x6087c8a0
+WARNING: [Synth 8-7129] Port img_addr[15] in module cnn_core_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port img_addr[14] in module cnn_core_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port img_addr[13] in module cnn_core_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port img_addr[12] in module cnn_core_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[31] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[30] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[29] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[28] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[27] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[26] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[25] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[24] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[23] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[22] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[21] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[20] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[19] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[18] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[17] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[16] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[15] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[14] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[13] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[12] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module axi_lite_cnn_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module axi_lite_cnn_wrapper is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 2167.656 ; gain = 698.363 ; free physical = 360 ; free virtual = 1793
+---------------------------------------------------------------------------------
+ Sort Area is  ifmap_index12_return_20 : 0 0 : 266 266 : Used 1 time 0
+ Sort Area is  ifmap_index4_return_b : 0 0 : 249 249 : Used 1 time 0
+ Sort Area is  ifmap_index10_return1_1a : 0 0 : 219 219 : Used 1 time 0
+ Sort Area is  ifmap_index10_return_1b : 0 0 : 219 219 : Used 1 time 0
+ Sort Area is  ifmap_index12_return1_1f : 0 0 : 219 219 : Used 1 time 0
+ Sort Area is  ifmap_index12_return_22 : 0 0 : 219 219 : Used 1 time 0
+ Sort Area is  ifmap_index13_return0_23 : 0 0 : 219 219 : Used 1 time 0
+ Sort Area is  ifmap_index14_return0_25 : 0 0 : 219 219 : Used 1 time 0
+ Sort Area is  ifmap_index8_return_16 : 0 0 : 219 219 : Used 1 time 0
+ Sort Area is  ifmap_index8_return_1c : 0 0 : 219 219 : Used 1 time 0
+ Sort Area is  ofmap_index0_return1_13 : 0 0 : 219 219 : Used 1 time 0
+ Sort Area is  ofmap_index0_return_15 : 0 0 : 219 219 : Used 1 time 0
+ Sort Area is  ofmap_index1_return1_1d : 0 0 : 219 219 : Used 1 time 0
+ Sort Area is  ofmap_index1_return_1e : 0 0 : 219 219 : Used 1 time 0
+ Sort Area is  ifmap_index0_return_0 : 0 0 : 202 202 : Used 1 time 0
+ Sort Area is  ifmap_index0_return_7 : 0 0 : 202 202 : Used 1 time 0
+ Sort Area is  ifmap_index2_return1_5 : 0 0 : 202 202 : Used 1 time 0
+ Sort Area is  ifmap_index2_return_6 : 0 0 : 202 202 : Used 1 time 0
+ Sort Area is  ifmap_index4_return1_a : 0 0 : 202 202 : Used 1 time 0
+ Sort Area is  ifmap_index4_return_d : 0 0 : 202 202 : Used 1 time 0
+ Sort Area is  ifmap_index5_return0_e : 0 0 : 202 202 : Used 1 time 0
+ Sort Area is  ifmap_index6_return0_10 : 0 0 : 202 202 : Used 1 time 0
+ Sort Area is  ofmap_index_return1_8 : 0 0 : 202 202 : Used 1 time 0
+ Sort Area is  ofmap_index_return_9 : 0 0 : 202 202 : Used 1 time 0
+ Sort Area is  ifmap_index13_return_24 : 0 0 : 172 172 : Used 1 time 0
+ Sort Area is  ifmap_index14_return_27 : 0 0 : 172 172 : Used 1 time 0
+ Sort Area is  ifmap_index9_return0_17 : 0 0 : 172 172 : Used 1 time 0
+ Sort Area is  ifmap_index9_return_19 : 0 0 : 172 172 : Used 1 time 0
+ Sort Area is  ifmap_index1_return0_2 : 0 0 : 155 155 : Used 1 time 0
+ Sort Area is  ifmap_index1_return_4 : 0 0 : 155 155 : Used 1 time 0
+ Sort Area is  ifmap_index5_return_f : 0 0 : 155 155 : Used 1 time 0
+ Sort Area is  ifmap_index6_return_12 : 0 0 : 155 155 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------+------------------------+---------------+----------------+
+|Module Name  | RTL Object             | Depth x Width | Implemented As | 
++-------------+------------------------+---------------+----------------+
+|cnn_core_fsm | conv1_weight_rdata_reg | 128x8         | Block RAM      | 
+|cnn_core_fsm | conv2_weight_rdata_reg | 2048x8        | Block RAM      | 
+|cnn_core_fsm | conv3_weight_rdata_reg | 16384x8       | Block RAM      | 
+|cnn_core_fsm | conv3_bias_rdata_reg   | 64x16         | Block RAM      | 
+|cnn_core_fsm | fc_weight_rdata_reg    | 1024x8        | Block RAM      | 
++-------------+------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/cnn_inst | img_mem_reg       | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|inst/cnn_inst | conv1_out_mem_reg | 18 K x 8(READ_FIRST)   | W |   | 18 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
+|inst/cnn_inst | pool1_out_mem_reg | 4 K x 8(READ_FIRST)    | W |   | 4 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|inst/cnn_inst | conv2_out_mem_reg | 9 K x 8(READ_FIRST)    | W |   | 9 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 4      | 
+|inst/cnn_inst | pool2_out_mem_reg | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|inst/cnn_inst | conv3_out_mem_reg | 9 K x 8(READ_FIRST)    | W |   | 9 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 4      | 
+|inst/cnn_inst | pool3_out_mem_reg | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
++--------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------+-----------------+-----------+----------------------+-------------+
+|Module Name   | RTL Object      | Inference | Size (Depth x Width) | Primitives  | 
++--------------+-----------------+-----------+----------------------+-------------+
+|inst/cnn_inst | fc_out_mem_reg  | Implied   | 16 x 24              | RAM32M x 4  | 
+|inst/cnn_inst | gap_out_mem_reg | Implied   | 64 x 8               | RAM64M x 3  | 
++--------------+-----------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|conv_layer  | C+A*(B:0x30)         | 16     | 7      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*(B:0x30)         | 16     | 7      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*(B:0x30)         | 16     | 7      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | A*(B:0x30)           | 16     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv_layer  | A*(B:0x30)           | 16     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*(B:0x30)         | 16     | 7      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*(B:0x30)         | 16     | 7      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*(B:0x30)         | 16     | 7      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | (D+(A:0x1))*(B:0x30) | 2      | 7      | -      | 16     | 23     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|maxpool     | A*(B:0x30)           | 16     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*(B:0x30)         | 16     | 7      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | A*(B:0x30)           | 16     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*(B:0x30)         | 16     | 7      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*(B:0x30)         | 16     | 7      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | C+(D+A)*(B:0x30)     | 16     | 7      | 16     | 16     | 16     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|maxpool     | C+A*(B:0x18)         | 16     | 6      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*(B:0x18)         | 16     | 6      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*(B:0x18)         | 16     | 6      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*(B:0x18)         | 16     | 6      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*(B:0x18)         | 16     | 6      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | A*(B:0x18)           | 16     | 6      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv_layer  | A*(B:0x18)           | 16     | 6      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*(B:0x18)         | 16     | 6      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*(B:0x18)         | 16     | 6      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*(B:0x18)         | 16     | 6      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | (D+(A:0x1))*(B:0x18) | 2      | 6      | -      | 16     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|maxpool     | A*(B:0x18)           | 16     | 6      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*(B:0x18)         | 16     | 6      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | A*(B:0x18)           | 16     | 6      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*(B:0x18)         | 16     | 6      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*(B:0x18)         | 16     | 6      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | C+(D+A)*(B:0x18)     | 16     | 6      | 16     | 16     | 16     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
++------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 2273.656 ; gain = 804.363 ; free physical = 2916 ; free virtual = 4353
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 2279.656 ; gain = 810.363 ; free physical = 2918 ; free virtual = 4358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/cnn_inst | img_mem_reg       | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|inst/cnn_inst | conv1_out_mem_reg | 18 K x 8(READ_FIRST)   | W |   | 18 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
+|inst/cnn_inst | pool1_out_mem_reg | 4 K x 8(READ_FIRST)    | W |   | 4 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|inst/cnn_inst | conv2_out_mem_reg | 9 K x 8(READ_FIRST)    | W |   | 9 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 4      | 
+|inst/cnn_inst | pool2_out_mem_reg | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|inst/cnn_inst | conv3_out_mem_reg | 9 K x 8(READ_FIRST)    | W |   | 9 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 4      | 
+|inst/cnn_inst | pool3_out_mem_reg | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
++--------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++--------------+-----------------+-----------+----------------------+-------------+
+|Module Name   | RTL Object      | Inference | Size (Depth x Width) | Primitives  | 
++--------------+-----------------+-----------+----------------------+-------------+
+|inst/cnn_inst | fc_out_mem_reg  | Implied   | 16 x 24              | RAM32M x 4  | 
+|inst/cnn_inst | gap_out_mem_reg | Implied   | 64 x 8               | RAM64M x 3  | 
++--------------+-----------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/img_mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv1_out_mem_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv1_out_mem_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv1_out_mem_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv1_out_mem_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv1_out_mem_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv1_out_mem_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv1_out_mem_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv1_out_mem_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/pool1_out_mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/pool1_out_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv2_out_mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv2_out_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv2_out_mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv2_out_mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/pool2_out_mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv3_out_mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv3_out_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv3_out_mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv3_out_mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/pool3_out_mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv1_weight_rdata_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv2_weight_rdata_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv3_weight_rdata_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv3_weight_rdata_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv3_weight_rdata_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv3_weight_rdata_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/conv3_bias_rdata_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cnn_inst/fc_weight_rdata_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 2330.703 ; gain = 861.410 ; free physical = 2878 ; free virtual = 4320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 2452.516 ; gain = 983.223 ; free physical = 4052 ; free virtual = 5494
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 2452.516 ; gain = 983.223 ; free physical = 4052 ; free virtual = 5494
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 2452.516 ; gain = 983.223 ; free physical = 4053 ; free virtual = 5495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 2452.516 ; gain = 983.223 ; free physical = 4053 ; free virtual = 5495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 2458.453 ; gain = 989.160 ; free physical = 4053 ; free virtual = 5495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 2458.453 ; gain = 989.160 ; free physical = 4053 ; free virtual = 5495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|conv_layer  | C+A*B       | 30     | 6      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*B       | 30     | 6      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*B       | 30     | 6      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | A*B         | 30     | 6      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv_layer  | A*B         | 30     | 6      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*B       | 30     | 6      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*B       | 30     | 6      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | (C+A*B)'    | 30     | 6      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|conv_layer  | C+A*B       | 30     | 5      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*B       | 30     | 5      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*B       | 30     | 5      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | A*B         | 30     | 5      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv_layer  | A*B         | 30     | 5      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*B       | 30     | 5      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | C+A*B       | 30     | 5      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|conv_layer  | (C+A*B)'    | 30     | 5      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|maxpool     | D+A*B       | 1      | 6      | -      | 25     | 23     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|maxpool     | A*B         | 30     | 6      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*B       | 30     | 6      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | A*B         | 30     | 6      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*B       | 30     | 6      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*B       | 30     | 6      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | C+D+A*B     | 30     | 6      | 48     | 25     | 16     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|maxpool     | C+A*B       | 30     | 5      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | (C+A*B)'    | 30     | 5      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|maxpool     | D+A*B       | 1      | 5      | -      | 25     | 22     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|maxpool     | A*B         | 30     | 5      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*B       | 30     | 5      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | A*B         | 30     | 5      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*B       | 30     | 5      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | C+A*B       | 30     | 5      | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxpool     | C+D+A*B     | 30     | 5      | 48     | 25     | 16     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   971|
+|2     |DSP48E1  |    32|
+|7     |LUT1     |   328|
+|8     |LUT2     |  1725|
+|9     |LUT3     |  1444|
+|10    |LUT4     |   990|
+|11    |LUT5     |   909|
+|12    |LUT6     |   814|
+|13    |RAM32M   |     4|
+|14    |RAM64M   |     3|
+|15    |RAMB18E1 |     4|
+|19    |RAMB36E1 |    25|
+|27    |FDCE     |  1749|
+|28    |FDPE     |     1|
+|29    |FDRE     |   109|
+|30    |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 2458.453 ; gain = 989.160 ; free physical = 4053 ; free virtual = 5495
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 2458.453 ; gain = 839.410 ; free physical = 4053 ; free virtual = 5495
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 2458.461 ; gain = 989.160 ; free physical = 4053 ; free virtual = 5495
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2458.461 ; gain = 0.000 ; free physical = 4211 ; free virtual = 5653
+INFO: [Netlist 29-17] Analyzing 1039 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2514.480 ; gain = 0.000 ; free physical = 4232 ; free virtual = 5675
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 3 instances
+
+Synth Design complete | Checksum: d5e0d3f3
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:01 . Memory (MB): peak = 2514.480 ; gain = 1140.691 ; free physical = 4232 ; free virtual = 5674
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1604.443; main = 1550.377; forked = 217.197
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3251.602; main = 2514.484; forked = 920.895
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2538.492 ; gain = 0.000 ; free physical = 4231 ; free virtual = 5675
+INFO: [Common 17-1381] The checkpoint '/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.runs/wafer_npu_bd_cnn_npu_0_0_synth_1/wafer_npu_bd_cnn_npu_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP wafer_npu_bd_cnn_npu_0_0, cache-ID = e99c9ecf51e9c9d4
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2538.492 ; gain = 0.000 ; free physical = 4219 ; free virtual = 5673
+INFO: [Common 17-1381] The checkpoint '/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.runs/wafer_npu_bd_cnn_npu_0_0_synth_1/wafer_npu_bd_cnn_npu_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file wafer_npu_bd_cnn_npu_0_0_utilization_synth.rpt -pb wafer_npu_bd_cnn_npu_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 12:29:14 2026...

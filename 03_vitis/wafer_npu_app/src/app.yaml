@@ -1,0 +1,4 @@
+domain_path: /home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/vitis_ws_new/wafer_npu_platform/export/wafer_npu_platform/sw/standalone_domain
+app_src_dir: /opt/Xilinx/Vitis/2024.2/data/embeddedsw/lib/sw_apps/empty_application
+template: empty_application
+lang: c

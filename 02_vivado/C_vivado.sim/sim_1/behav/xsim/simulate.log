@@ -1,0 +1,16 @@
+Time resolution is 1 ps
+[TEST 1] PASS  |   normal_pos_1             | expected=0x0054, got=0x0054
+[TEST 2] PASS  |   normal_pos_2             | expected=0x000d, got=0x000d
+[TEST 3] PASS  |   neg_mixed_still_pos      | expected=0x0014, got=0x0014
+[TEST 4] PASS  |   neg_mixed_clip_zero      | expected=0x0000, got=0x0000
+[TEST 5] PASS  |   zero_ifmap               | expected=0x0000, got=0x0000
+[TEST 6] PASS  |   zero_weight_bias200      | expected=0x0001, got=0x0001
+[TEST 7] PASS  |   max_pos_x_max_pos_satlow | expected=0x007f, got=0x007f
+[TEST 8] PASS  |   max_neg_x_max_neg_satlow | expected=0x007f, got=0x007f
+[TEST 9] PASS  |   max_pos_x_max_neg_clip0  | expected=0x0000, got=0x0000
+[TEST 10] PASS  |   random_1                 | expected=0x0000, got=0x0000
+[TEST 11] PASS  |   random_2                 | expected=0x007f, got=0x007f
+[TEST 12] PASS  |   random_3                 | expected=0x001f, got=0x001f
+
+=== SUMMARY: 12 / 12 PASS (100%) ===
+$finish called at time : 40915 ns : File "/home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/C_vivado.srcs/sim_1/imports/new/tb_conv_layer.v" Line 684

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1782876484" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/axi_lite_cnn_wrapper.dcp">
+  <File Type="RDS-DCP" Name="wafer_npu_bd_wrapper.dcp"/>
+  <File Type="RDS-RDS" Name="wafer_npu_bd_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="wafer_npu_bd_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="wafer_npu_bd_wrapper.tcl"/>
+  <File Type="RDS-UTIL" Name="wafer_npu_bd_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="wafer_npu_bd_wrapper_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/wafer_npu_bd/wafer_npu_bd.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/wafer_npu_bd/hdl/wafer_npu_bd_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/cnn_core_fsm.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/conv_layer.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../PycharmProjects/wafer_NPU/wafer_npu/wafer_npu.srcs/sources_1/new/conv_layer.v"/>
+        <Attr Name="ImportTime" Val="1782861829"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/fc.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/global_avg_pool.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/maxpool.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/axi_lite_cnn_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mem/conv3_bias.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../PycharmProjects/wafer_NPU/python/python/mem/conv3_bias.mem"/>
+        <Attr Name="ImportTime" Val="1782861220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mem/fc_weight.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../PycharmProjects/wafer_NPU/python/python/mem/fc_weight.mem"/>
+        <Attr Name="ImportTime" Val="1782861220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mem/conv2_bias.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../PycharmProjects/wafer_NPU/python/python/mem/conv2_bias.mem"/>
+        <Attr Name="ImportTime" Val="1782861220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mem/conv2_weight.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../PycharmProjects/wafer_NPU/python/python/mem/conv2_weight.mem"/>
+        <Attr Name="ImportTime" Val="1782861220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mem/fc_bias.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../PycharmProjects/wafer_NPU/python/python/mem/fc_bias.mem"/>
+        <Attr Name="ImportTime" Val="1782861220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mem/conv1_bias.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../PycharmProjects/wafer_NPU/python/python/mem/conv1_bias.mem"/>
+        <Attr Name="ImportTime" Val="1782861220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mem/conv3_weight.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../PycharmProjects/wafer_NPU/python/python/mem/conv3_weight.mem"/>
+        <Attr Name="ImportTime" Val="1782861220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mem/conv1_weight.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../PycharmProjects/wafer_NPU/python/python/mem/conv1_weight.mem"/>
+        <Attr Name="ImportTime" Val="1782861220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ip_repo_cnn_npu/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="wafer_npu_bd_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Desktop/Zybo-Z7-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Desktop/Zybo-Z7-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1782344954"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/axi_lite_cnn_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="wafer_npu_bd_ps7_0_axi_periph_imp_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="wafer_npu_bd_cnn_npu_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="wafer_npu_bd_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="wafer_npu_bd_rst_ps7_0_40M_0"/>
+</GenRun>

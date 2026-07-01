@@ -1,0 +1,204 @@
+{
+  "class_names": [
+    "Center",
+    "Donut",
+    "Edge-Loc",
+    "Edge-Ring",
+    "Loc",
+    "Near-full",
+    "Random",
+    "Scratch",
+    "none"
+  ],
+  "cases": [
+    {
+      "index": 0,
+      "class_name": "Center",
+      "true_class_idx": 0,
+      "sample_row": 84450,
+      "float_pred_idx": 0,
+      "quant_pred_idx": 0,
+      "mem_file": "image_0_Center.mem",
+      "quant_pred_idx_v2": 3,
+      "quant_scores": [
+        8,
+        -22,
+        -25,
+        -52,
+        -1,
+        -124,
+        -28,
+        -32,
+        -57
+      ]
+    },
+    {
+      "index": 1,
+      "class_name": "Donut",
+      "true_class_idx": 1,
+      "sample_row": 131576,
+      "float_pred_idx": 1,
+      "quant_pred_idx": 1,
+      "mem_file": "image_1_Donut.mem",
+      "quant_pred_idx_v2": 2,
+      "quant_scores": [
+        25,
+        31,
+        -33,
+        -92,
+        26,
+        -88,
+        -10,
+        -46,
+        -164
+      ]
+    },
+    {
+      "index": 2,
+      "class_name": "Edge-Loc",
+      "true_class_idx": 2,
+      "sample_row": 8462,
+      "float_pred_idx": 2,
+      "quant_pred_idx": 4,
+      "mem_file": "image_2_Edge-Loc.mem",
+      "quant_pred_idx_v2": 3,
+      "quant_scores": [
+        -12,
+        -31,
+        -10,
+        -20,
+        -8,
+        -135,
+        -34,
+        -30,
+        -53
+      ]
+    },
+    {
+      "index": 3,
+      "class_name": "Edge-Ring",
+      "true_class_idx": 3,
+      "sample_row": 27818,
+      "float_pred_idx": 3,
+      "quant_pred_idx": 8,
+      "mem_file": "image_3_Edge-Ring.mem",
+      "quant_pred_idx_v2": 8,
+      "quant_scores": [
+        -14,
+        -36,
+        -6,
+        -17,
+        -7,
+        -145,
+        -34,
+        -4,
+        24
+      ]
+    },
+    {
+      "index": 4,
+      "class_name": "Loc",
+      "true_class_idx": 4,
+      "sample_row": 72612,
+      "float_pred_idx": 4,
+      "quant_pred_idx": 4,
+      "mem_file": "image_4_Loc.mem",
+      "quant_pred_idx_v2": 8,
+      "quant_scores": [
+        -5,
+        -23,
+        -5,
+        -28,
+        7,
+        -143,
+        -29,
+        6,
+        -1
+      ]
+    },
+    {
+      "index": 5,
+      "class_name": "Near-full",
+      "true_class_idx": 5,
+      "sample_row": 64405,
+      "float_pred_idx": 5,
+      "quant_pred_idx": 6,
+      "mem_file": "image_5_Near-full.mem",
+      "quant_pred_idx_v2": 3,
+      "quant_scores": [
+        -10,
+        -48,
+        -6,
+        -53,
+        -20,
+        18,
+        24,
+        -186,
+        -318
+      ]
+    },
+    {
+      "index": 6,
+      "class_name": "Random",
+      "true_class_idx": 6,
+      "sample_row": 97153,
+      "float_pred_idx": 6,
+      "quant_pred_idx": 0,
+      "mem_file": "image_6_Random.mem",
+      "quant_pred_idx_v2": 3,
+      "quant_scores": [
+        -8,
+        -31,
+        -32,
+        -41,
+        -14,
+        -105,
+        -12,
+        -21,
+        -23
+      ]
+    },
+    {
+      "index": 7,
+      "class_name": "Scratch",
+      "true_class_idx": 7,
+      "sample_row": 91956,
+      "float_pred_idx": 2,
+      "quant_pred_idx": 8,
+      "mem_file": "image_7_Scratch.mem",
+      "quant_pred_idx_v2": 8,
+      "quant_scores": [
+        -8,
+        -33,
+        -4,
+        -17,
+        -2,
+        -140,
+        -29,
+        -1,
+        8
+      ]
+    },
+    {
+      "index": 8,
+      "class_name": "none",
+      "true_class_idx": 8,
+      "sample_row": 75738,
+      "float_pred_idx": 8,
+      "quant_pred_idx": 8,
+      "mem_file": "image_8_none.mem",
+      "quant_pred_idx_v2": 8,
+      "quant_scores": [
+        -10,
+        -35,
+        -2,
+        -26,
+        -3,
+        -157,
+        -40,
+        -2,
+        26
+      ]
+    }
+  ]
+}

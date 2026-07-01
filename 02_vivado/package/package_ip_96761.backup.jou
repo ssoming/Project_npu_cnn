@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jul  1 12:18:22 2026
+# Process ID         : 96761
+# Current directory  : /home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado
+# Command line       : vivado -mode batch -source package_ip.tcl -log package_ip.log -journal package_ip.jou
+# Log file           : /home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/package_ip.log
+# Journal file       : /home/kimyujeong/workspace_ondevice_2/09.wafer_npu_project/C_vivado/package_ip.jou
+# Running On         : kimyujeong-IdeaPad-1-15ALC7
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : AMD Ryzen 5 5500U with Radeon Graphics
+# CPU Frequency      : 3994.666 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 14489 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 18784 MB
+# Available Virtual  : 7300 MB
+#-----------------------------------------------------------
+source package_ip.tcl
