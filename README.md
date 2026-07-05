@@ -20,18 +20,22 @@
 ---
  
 ## 2. 주요 기능
- 
+
 - **WM-811K 웨이퍼 맵 CNN 결함 분류** — 9종 결함 유형을 분류하는 CNN 모델을 학습해 FPGA 하드웨어 IP로 구현
 - **AXI4-Lite 기반 커스텀 CNN 추론 IP** — Conv/Pool/GAP/FC 전 레이어를 Verilog RTL로 설계한 하드웨어 가속기
 - **PyQt5 통합 GUI** — 단일/배치 추론, CSV+PDF 리포트, 수율 추이 비교
+
 ## 3. 담당 역할
  
 **CNN 모델 설계·학습과 추론용 하드웨어 IP 설계를 담당했습니다.**
  
 - **CNN 모델 설계/학습** — Conv-Pool ×3 + GAP + Dense(9) 구조 설계 및 학습(정확도 89.1%), 레이어별 최적 양자화 적용
 - **추론 IP 설계 (Verilog)** — conv/pool/GAP/FC 레이어 모듈과 이를 시퀀싱하는 FSM, AXI4-Lite 슬레이브 래퍼 설계
+
 ## 4. 시스템 아키텍처 및 핵심 구현
- 
+
+![blockdiagram](NPU_systemarchietecture.png)
+
 | 단계 | 내용 |
 |---|---|
 | ① 모델 개발 | WM-811K 데이터 전처리 → CNN 학습 → 레이어별 최적 양자화 후 .mem 변환 |
