@@ -34,7 +34,7 @@
 
 ## 4. 시스템 아키텍처 및 핵심 구현
 
-![blockdiagram](NPU_systemarchietecture.png)
+![SystemArchitecture](NPU_systemarchietecture.png)
 
 | 단계 | 내용 |
 |---|---|
